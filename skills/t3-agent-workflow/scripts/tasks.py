@@ -69,6 +69,19 @@ def doc_digest(repo, rel):
     return hashlib.sha256(checked_path(repo, rel).read_bytes()).hexdigest()
 
 
+def promote(repo, task, evidence):
+    if not evidence.strip():
+        raise ValueError("Promotion needs the new uncertainty/scope reason")
+    with edit(repo, task) as data:
+        if data is None:
+            raise ValueError("Unknown task")
+        data["size"], data["stage"] = "full", "clarify"
+        data["promotion_reason"] = evidence
+        data["approvals"], data["documents"] = {}, {}
+        data["review"], data["checks"], data["ship_request"] = None, {}, None
+    return data
+
+
 def approvals_current(repo, data):
     if data["size"] == "small":
         return True
@@ -254,6 +267,8 @@ def main():
     p = sub.add_parser("document")
     p.add_argument("--kind", choices=["spec", "tickets"], required=True)
     p.add_argument("--path", required=True)
+    p = sub.add_parser("promote")
+    p.add_argument("--evidence", required=True)
     p = sub.add_parser("approve")
     p.add_argument("--kind", choices=["spec", "tickets"], required=True)
     p.add_argument("--evidence", required=True)
@@ -292,7 +307,7 @@ def main():
         errors = ship_errors(repo, data, config)
         result = {"allowed": not errors, "errors": errors, "effect": config["ship"], "revision": data["revision"]}
     else:
-        fn = {"create": create, "document": set_document, "approve": approve, "candidate": candidate, "review": record_review, "check": record_check, "ship-request": request_ship, "action-start": reserve_action, "action-finish": finish_action}[op]
+        fn = {"create": create, "promote": promote, "document": set_document, "approve": approve, "candidate": candidate, "review": record_review, "check": record_check, "ship-request": request_ship, "action-start": reserve_action, "action-finish": finish_action}[op]
         result = fn(repo, task, **values)
     print(json.dumps(result, indent=2))
 

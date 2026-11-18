@@ -87,6 +87,12 @@ def tz(name):
 def validate_config(c):
     if not isinstance(c, dict) or set(c) != set(default_config()) or c.get("version") != 1:
         raise ValueError("Unsupported config schema/version; preserve unknown fields for manual migration")
+    defaults = default_config()
+    for key in ["docs", "execution", "review", "permissions", "ship", "maintenance"]:
+        if not isinstance(c[key], dict) or set(c[key]) != set(defaults[key]):
+            raise ValueError(f"Invalid {key} fields; schema migration must be deliberate")
+    if not isinstance(c["qa"], list) or not isinstance(c["capabilities"], dict):
+        raise ValueError("QA must be a list and capabilities an object")
     if c["tracker"] not in {"local", "github"}:
         raise ValueError("V1 tracker must be local or github")
     for loc in c["docs"].values():
@@ -103,7 +109,7 @@ def validate_config(c):
         raise ValueError("Independent review must be boolean")
     ids = set()
     for q in c["qa"]:
-        if set(q) != {"id", "command", "required", "kind"} or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", q["id"]) or q["id"] in ids:
+        if not isinstance(q, dict) or set(q) != {"id", "command", "required", "kind"} or not isinstance(q["id"], str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", q["id"]) or q["id"] in ids:
             raise ValueError("QA check IDs must be unique safe names with command/required/kind fields")
         ids.add(q["id"])
         if type(q["required"]) is not bool or q["kind"] not in {"command", "human", "device", "browser"} or not isinstance(q["command"], str):
@@ -186,7 +192,7 @@ def main():
     if a.op == "scan":
         result = scan(a.repo)
     elif a.op == "config-init":
-        result = init_config(a.repo)[0] if a.write else default_config()
+        result = init_config(a.repo)[0] if a.write else (load_config(a.repo) if checked_path(a.repo, CONFIG).exists() else default_config())
     else:
         result = load_config(a.repo)
     print(json.dumps(result, indent=2))

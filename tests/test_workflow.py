@@ -98,6 +98,15 @@ class WorkflowTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             t.create(self.repo, "task", "small", "manual:typo", "Change behavior")
 
+    def test_promotion_keeps_actions_and_restores_full_approval_gates(self):
+        self.ready()
+        t.reserve_action(self.repo, "task", "pr", "pr-create", "fixture:repo")
+        data = t.promote(self.repo, "task", "Found unclear product behavior")
+        self.assertIn("pr", data["actions"])
+        self.assertEqual(data["size"], "full")
+        with self.assertRaises(ValueError):
+            t.candidate(self.repo, "task", "new-revision")
+
     def test_ship_requires_instruction_and_consumes_it(self):
         self.ready()
         target = self.config["ship"]["target"]

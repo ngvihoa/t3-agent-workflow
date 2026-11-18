@@ -15,7 +15,7 @@ spec.loader.exec_module(installer)
 class InstallTest(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
-        self.dest = Path(self.temp.name) / "skills"
+        self.dest = Path(self.temp.name).resolve() / "skills"
 
     def tearDown(self):
         self.temp.cleanup()

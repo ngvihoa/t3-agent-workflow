@@ -6,10 +6,11 @@ The main skill's `scripts/tasks.py` is a local bookkeeping CLI; it does not call
 | --- | --- |
 | `create` | `--size small/full --source <reference> --scope <criteria>`; same identity resumes, conflicting scope is rejected. |
 | `show` | Show the saved record, including unresolved actions and maintenance handles. |
+| `promote` | `--evidence <new-uncertainty-or-scope-reason>`; preserve action history, move to full path, clear approvals/evidence. |
 | `document` | `--kind spec/tickets --path <project-relative-file>`; records content hash. Tickets require prior spec approval. |
 | `approve` | `--kind spec/tickets --evidence <observed-user-statement-and-source>`; separate current-version approval. Never invent a statement. |
 | `candidate` | `--revision <actual-Git-SHA>`; requires full-path approvals; changing revision clears review/QA/ship evidence. |
-| `review` | `--revision ... --standards pass/fail --spec pass/fail --evidence ...`; the small task's scope is its spec criterion. |
+| `review` | `--revision ... --standards pass/fail --spec pass/fail --evidence ...`; add `--independent` only for an actually observed independent review. Small-task scope is its spec criterion. |
 | `check` | `--revision ... --check <configured-id> --status pass/fail/pending/skipped --origin executed/human/simulation --evidence ...` |
 | `ship-request` | `--revision ... --evidence <actual-user-ship-instruction>`; checks approvals/review/required QA and binds policy/revision. |
 | `ship-plan` | Report allowed/errors/effect; never performs shipping. |

@@ -32,6 +32,8 @@ def validate():
     for entry in provenance["records"]:
         if entry["artifact"] not in m["files"]:
             errors.append(f"Missing upstream artifact: {entry['artifact']}")
+        elif entry.get("adapted_sha256") != m["files"][entry["artifact"]]:
+            errors.append(f"Adaptation hash mismatch: {entry['artifact']}")
     for name in {Path(e["artifact"]).parts[1] for e in provenance["records"]}:
         if not (ROOT / "skills" / name / "UPSTREAM_LICENSE").is_file():
             errors.append(f"Missing upstream license: {name}")

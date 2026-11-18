@@ -18,6 +18,12 @@ def build():
         "skills": sorted(p.name for p in (ROOT / "skills").iterdir() if p.is_dir()),
         "files": files,
     }
+    provenance_path = ROOT / "upstream.json"
+    if provenance_path.exists():
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        for record in provenance["records"]:
+            record["adapted_sha256"] = files[record["artifact"]]
+        provenance_path.write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")
     (ROOT / "bundle.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     return manifest
 
