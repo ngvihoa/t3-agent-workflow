@@ -1,0 +1,6 @@
+interface:
+  display_name: "t3-grill-with-docs"
+  short_description: "Project-aware workflow for agents in T3 Code"
+  default_prompt: "Use $t3-grill-with-docs for this task within the configured project workflow."
+policy:
+  allow_implicit_invocation: true

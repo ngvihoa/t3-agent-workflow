@@ -1,0 +1,6 @@
+interface:
+  display_name: "t3-babysit-pr"
+  short_description: "Project-aware workflow for agents in T3 Code"
+  default_prompt: "Use $t3-babysit-pr within the configured project policy."
+policy:
+  allow_implicit_invocation: true

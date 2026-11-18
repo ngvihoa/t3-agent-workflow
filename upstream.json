@@ -1,0 +1,168 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+  "records": [
+    {
+      "source": "skills/engineering/code-review/SKILL.md",
+      "original_sha256": "9c921a8d88138a41401d8897ca1bb852088ab1b7b605cdd04edc13e3e8aab6dd",
+      "artifact": "skills/t3-code-review/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/codebase-design/DEEPENING.md",
+      "original_sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+      "artifact": "skills/t3-codebase-design/DEEPENING.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+      "original_sha256": "c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
+      "artifact": "skills/t3-codebase-design/DESIGN-IT-TWICE.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/codebase-design/SKILL.md",
+      "original_sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "artifact": "skills/t3-codebase-design/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "original_sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "artifact": "skills/t3-domain-modeling/ADR-FORMAT.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
+      "original_sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+      "artifact": "skills/t3-domain-modeling/GLOSSARY-FORMAT.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/domain-modeling/SKILL.md",
+      "original_sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+      "artifact": "skills/t3-domain-modeling/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/grill-with-docs/SKILL.md",
+      "original_sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+      "artifact": "skills/t3-grill-with-docs/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/implement-spec/SKILL.md",
+      "original_sha256": "1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+      "artifact": "skills/t3-implement-spec/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/pr/CREDITS.md",
+      "original_sha256": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+      "artifact": "skills/t3-pr/CREDITS.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/pr/SKILL.md",
+      "original_sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+      "artifact": "skills/t3-pr/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/retro/SKILL.md",
+      "original_sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+      "artifact": "skills/t3-retro/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "original_sha256": "b01e05bfe8c323171275c6ceec78b12f1bd4c62dfd26c2cfe8be806d3883f1ed",
+      "artifact": "skills/t3-workflow-setup/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "original_sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+      "artifact": "skills/t3-workflow-setup/domain.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "original_sha256": "6fdb3e9b00b7b0b115ecac3b1c00e3790f637f190abf598815368722c0a94692",
+      "artifact": "skills/t3-workflow-setup/issue-tracker-github.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "original_sha256": "947602d33a80f98f939fb990995b8f95a3459b114b919c4221d08bd75d7cffe0",
+      "artifact": "skills/t3-workflow-setup/issue-tracker-gitlab.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "original_sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+      "artifact": "skills/t3-workflow-setup/issue-tracker-local.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/setup-matt-pocock-skills/triage-labels.md",
+      "original_sha256": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+      "artifact": "skills/t3-workflow-setup/triage-labels.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/tdd/SKILL.md",
+      "original_sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+      "artifact": "skills/t3-tdd/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/tdd/mocking.md",
+      "original_sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+      "artifact": "skills/t3-tdd/mocking.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/tdd/tests.md",
+      "original_sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+      "artifact": "skills/t3-tdd/tests.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/to-spec/SKILL.md",
+      "original_sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "artifact": "skills/t3-to-spec/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/engineering/to-tickets/SKILL.md",
+      "original_sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+      "artifact": "skills/t3-to-tickets/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/in-progress/chief-of-staff/SKILL.md",
+      "original_sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+      "artifact": "skills/t3-agent-workflow/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/productivity/grilling/SKILL.md",
+      "original_sha256": "a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+      "artifact": "skills/t3-grilling/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "original_sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+      "artifact": "skills/t3-writing-for-agents/SKILL-MECHANICS.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    },
+    {
+      "source": "skills/productivity/writing-for-agents/SKILL.md",
+      "original_sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+      "artifact": "skills/t3-writing-for-agents/SKILL.md",
+      "adaptation": "Namespaced skill calls; portable loading; shared scope/approval policy. Workflow entrypoints further adapted for T3."
+    }
+  ]
+}
