@@ -1,6 +1,6 @@
 # T3 Agent Workflow — v1 Ticket Plan
 
-Status: Approved by the user in this thread ("ok"). Implementation is authorized within the approved specification and ticket scope.
+Status: Approved by the user in this thread ("ok"). Implementation has been delivered within this approved scope; verification boundaries are recorded in [validation results](VALIDATION.md).
 
 Parent: [Approved v1 specification](SPEC.md).
 
@@ -186,4 +186,4 @@ Parent: [Approved v1 specification](SPEC.md).
 
 Start with T01 → T02 → T03. Then T04 and T05 are independent work fronts. T06 requires both; T07 can proceed after T05. Finish T08 after T06 and T07.
 
-The division into these eight tickets and their blocking edges is the remaining approval request. Once approved, routine implementation choices within these boundaries do not require another planning round.
+The user approved this eight-ticket breakdown and its blocking edges. The package has been implemented and published; live project integrations remain subject to the verification boundaries in the validation report.

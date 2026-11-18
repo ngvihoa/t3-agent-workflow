@@ -1,6 +1,6 @@
 # T3 Agent Workflow — v1 Specification
 
-Status: Approved by the user in this thread ("ok làm tiếp ik", following the spec approval request). The ticket plan was separately approved by the user ("ok"); implementation is in progress.
+Status: Approved by the user in this thread ("ok làm tiếp ik", following the spec approval request). The ticket plan was separately approved by the user ("ok"). Implementation has been delivered at https://github.com/ngvihoa/t3-agent-workflow; see VALIDATION.md for observed checks and unverified live capabilities.
 
 ## Problem Statement
 
